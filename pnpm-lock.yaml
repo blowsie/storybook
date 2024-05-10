@@ -65,7 +65,7 @@ importers:
         version: 0.5.5
       chromatic:
         specifier: ^11.3.0
-        version: 11.3.0
+        version: 11.3.2
       eslint:
         specifier: ^9.0.0
         version: 9.1.1
@@ -242,6 +242,9 @@ packages:
 
   '@antfu/utils@0.7.7':
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
+
+  '@antfu/utils@0.7.8':
+    resolution: {integrity: sha512-rWQkqXRESdjXtc+7NRfK9lASQjpXJu1ayp7qi1d23zZorY+wBHVLHHoVcMsEnkqEBWTFqbztO7/QdJFzyEcLTg==}
 
   '@aw-web-design/x-default-browser@1.4.126':
     resolution: {integrity: sha512-Xk1sIhyNC/esHGGVjL/niHLowM0csl/kFO5uawBy4IrWwy0o1G8LGt3jP6nmWGz+USxeeqbihAmp/oVZju6wug==}
@@ -3495,6 +3498,18 @@ packages:
       '@chromatic-com/playwright':
         optional: true
 
+  chromatic@11.3.2:
+    resolution: {integrity: sha512-0PuHl49VvBMoDHEfmNjC/bim9YYNhWF3axTZlFuatC0avwr2Xw4GDqJDG9fArEWN8oM8VtYHkE9D7qc87dmz2w==}
+    hasBin: true
+    peerDependencies:
+      '@chromatic-com/cypress': ^0.*.* || ^1.0.0
+      '@chromatic-com/playwright': ^0.*.* || ^1.0.0
+    peerDependenciesMeta:
+      '@chromatic-com/cypress':
+        optional: true
+      '@chromatic-com/playwright':
+        optional: true
+
   ci-info@3.9.0:
     resolution: {integrity: sha512-NIxF55hv4nSqQswkAeiOi1r83xy8JldOFDTWiug55KBu9Jnblncd2U6ViHmYgHf01TPZS77NJBhBMKdWj9HQMQ==}
     engines: {node: '>=8'}
@@ -4477,11 +4492,9 @@ packages:
     resolution: {integrity: sha512-afW+h2CFafo+7Y9Lvw/xsqjaQlKLdJV7h1fCHfcYQ1C4SVMlu7OAekqWgu5d4SgvkBVU0pVpLlVsrSTBURFRkg==}
     peerDependencies:
       '@nuxt/kit': ^3.2.0
-      vue: ^3.2.0 || ^3.2.45
+      vue: ^3.2.0
     peerDependenciesMeta:
       '@nuxt/kit':
-        optional: true
-      vue:
         optional: true
 
   flow-parser@0.234.0:
@@ -5923,6 +5936,9 @@ packages:
   mlly@1.6.1:
     resolution: {integrity: sha512-vLgaHvaeunuOXHSmEbZ9izxPx3USsk8KCQ8iC+aTlp5sKRSoZvwhHh5L9VbKSaVC6sJDqbyohIS76E2VmHIPAA==}
 
+  mlly@1.7.0:
+    resolution: {integrity: sha512-U9SDaXGEREBYQgfejV97coK0UL1r+qnF2SyO9A3qcI8MzKnsIFKHNVEkrDyNncQTKQQumsasmeq84eNMdBfsNQ==}
+
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
@@ -6457,6 +6473,9 @@ packages:
 
   pkg-types@1.1.0:
     resolution: {integrity: sha512-/RpmvKdxKf8uILTtoOhAgf30wYbP2Qw+L9p3Rvshx1JZVX+XQNZQFjlbmGHEGIm4CkVPlSn+NXmIM8+9oWQaSA==}
+
+  pkg-types@1.1.1:
+    resolution: {integrity: sha512-ko14TjmDuQJ14zsotODv7dBlwxKhUKQEhuhmbqo1uCi9BB0Z2alo/wAXg6q1dTR5TyuqYyWhjtfe/Tsh+X28jQ==}
 
   pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
@@ -8535,6 +8554,8 @@ snapshots:
 
   '@antfu/utils@0.7.7': {}
 
+  '@antfu/utils@0.7.8': {}
+
   '@aw-web-design/x-default-browser@1.4.126':
     dependencies:
       default-browser-id: 3.0.0
@@ -9654,12 +9675,12 @@ snapshots:
   '@iconify/utils@2.1.23':
     dependencies:
       '@antfu/install-pkg': 0.1.1
-      '@antfu/utils': 0.7.7
+      '@antfu/utils': 0.7.8
       '@iconify/types': 2.0.0
       debug: 4.3.4
       kolorist: 1.8.0
       local-pkg: 0.5.0
-      mlly: 1.6.1
+      mlly: 1.7.0
     transitivePeerDependencies:
       - supports-color
 
@@ -13502,6 +13523,8 @@ snapshots:
 
   chromatic@11.3.0: {}
 
+  chromatic@11.3.2: {}
+
   ci-info@3.9.0: {}
 
   ci-info@4.0.0: {}
@@ -14693,18 +14716,18 @@ snapshots:
   floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@3.29.4))(vue@3.4.24(typescript@5.4.5)):
     dependencies:
       '@floating-ui/dom': 1.1.1
+      vue: 3.4.24(typescript@5.4.5)
       vue-resize: 2.0.0-alpha.1(vue@3.4.24(typescript@5.4.5))
     optionalDependencies:
       '@nuxt/kit': 3.11.2(rollup@3.29.4)
-      vue: 3.4.24(typescript@5.4.5)
 
   floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.16.4))(vue@3.4.24(typescript@5.4.5)):
     dependencies:
       '@floating-ui/dom': 1.1.1
+      vue: 3.4.24(typescript@5.4.5)
       vue-resize: 2.0.0-alpha.1(vue@3.4.24(typescript@5.4.5))
     optionalDependencies:
       '@nuxt/kit': 3.11.2(rollup@4.16.4)
-      vue: 3.4.24(typescript@5.4.5)
 
   flow-parser@0.234.0: {}
 
@@ -16416,6 +16439,13 @@ snapshots:
       pkg-types: 1.1.0
       ufo: 1.5.3
 
+  mlly@1.7.0:
+    dependencies:
+      acorn: 8.11.3
+      pathe: 1.1.2
+      pkg-types: 1.1.1
+      ufo: 1.5.3
+
   mri@1.2.0: {}
 
   mrmime@2.0.0: {}
@@ -17341,6 +17371,12 @@ snapshots:
     dependencies:
       confbox: 0.1.7
       mlly: 1.6.1
+      pathe: 1.1.2
+
+  pkg-types@1.1.1:
+    dependencies:
+      confbox: 0.1.7
+      mlly: 1.7.0
       pathe: 1.1.2
 
   pluralize@8.0.0: {}
@@ -18996,7 +19032,7 @@ snapshots:
 
   unconfig@0.3.13:
     dependencies:
-      '@antfu/utils': 0.7.7
+      '@antfu/utils': 0.7.8
       defu: 6.1.4
       jiti: 1.21.0
 
